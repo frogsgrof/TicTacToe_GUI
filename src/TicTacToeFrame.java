@@ -44,7 +44,8 @@ public class TicTacToeFrame extends JFrame {
 
         JPanel gamePnl = new JPanel();
         gamePnl.setOpaque(false);
-        gamePnl.setPreferredSize(new Dimension(WIDTH, WIDTH));
+        int panelLen = WIDTH;
+        gamePnl.setPreferredSize(new Dimension(panelLen, panelLen));
         GridLayout gridLayout = new GridLayout(ROW, COL);
         gridLayout.setHgap(10);
         gridLayout.setVgap(10);
